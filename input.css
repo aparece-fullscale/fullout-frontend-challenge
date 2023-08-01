@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label, input, p {
+  font-family: 'Bw Nista Geometric DEMO', sans-serif;
+}
+
+.test_class {
+  @apply text-blue-400;
+}
+
+input {
+  font-weight: 800;
+  font-size: 1.2rem;
+  outline: none;
+  color: black !important;
+}
+
+p {
+  margin: 0px 0px;
+  font-size: 3.5em;
+  font-weight: 900;
+  font-style: italic;
+  margin: -25px 0px;
+}
+
+label {
+  font-size: 0.57rem;
+  font-weight: 800;
+  margin: 0px 0px;
+  letter-spacing: 0.19em;
+  padding: 5px 0px;
+}
+
+.cont {
+  align-items: center;
+}
+
+.hr {
+  top: 50%;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
+.wrapper {
+  border-radius: 20px 20px 95px 20px;
+}
+
+.btn-container {
+  width: 400px;
+}
+
+.text-error {
+  color: #ff7777;
+  font-style: italic;
+  font-size: 0.6rem;
+  display: none;
+}
+
+.error-input {
+  outline: #ff7777 1px solid;
+}
+
+.error-label {
+  color: #ff7777;
+}
+
+/* media screen for mobile */
+@media screen and (max-width: 639px) {
+  .btn-container {
+    width: auto;
+    text-align: center;
+  }
+}

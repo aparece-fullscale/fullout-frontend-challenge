@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/bw-nista-geometric-demo" rel="stylesheet">
+
+  <title>Fullout Coding Challenge | Provided by Frontend Mentor</title>
+</head>
+
+<body>
+  <!-- Please add all of the card styles below here. Feel free to 
+      add or remove any elements needed. You can either style with Tailwind 
+      or regular CSS inside of the `input.css` file (but bonus points for Tailwind).
+    -->
+  <div class="bg-gray-100 w-screen h-screen flex">
+    <div class="wrapper m-auto bg-white px-8 py-10">
+      <div class="grid grid-cols-3 w-80 gap-5">
+        <div class="flex flex-col">
+          <label class="text-gray-500" for="day">DAY</label>
+          <input class="border outline outline-gray-400 outline-1 focus:outline-[#864cff]  rounded-md py-2 px-4" name="day" id="day" placeholder="DD" />
+          <small class="text-error">This field is required</small>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-500" for="month">MONTH</label>
+          <input class="border outline outline-gray-400 outline-1 focus:outline-[#864cff] rounded-md py-2 px-4" name="month" id="month" placeholder="MM" />
+          <small class="text-error">This field is required</small>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-500" for="year">YEAR</label>
+          <input class="border outline outline-gray-400 outline-1 focus:outline-[#864cff] rounded-md py-2 px-4" name="year" id="year" placeholder="YYYY" />
+          <small class="text-error">This field is required</small>
+        </div>
+      </div>
+      <div class="btn-container sm:text-right md:text-right relative">
+        <img src="./assets/icon-arrow.svg" class="bg-custom-864cff inline rounded-full p-4 w-14 my-10 sm:my-6 relative z-10 cursor-pointer hover:bg-black"
+          alt="" id="button">
+        <hr class="hr border absolute w-full">
+      </div>
+      <div>
+        <p><span class="text-custom-844cff result">--</span> years</p>
+        <p><span class="text-custom-844cff result">--</span> months</p>
+        <p><span class="text-custom-844cff result">--</span> days</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add html above here -->
+</body>
+
+<script src="/custom.js" type="text/javascript"></script>
+
+</html>
